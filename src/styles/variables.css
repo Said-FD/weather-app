@@ -1,0 +1,11 @@
+:root {
+  --mainTextColor: #333;
+  --mainBgColor: #fff;
+  --accentColor: #005898;
+  --accentReverseColor: #fefebe;
+  --borderColor: var(--accentColor, #005898);
+  --tileBgColor: #fefebe;
+  --tileBorderRadius: 8px;
+  --buttonBorderRadius: 8px;
+  --alertColor: #f00;
+}

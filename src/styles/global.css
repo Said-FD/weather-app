@@ -1,0 +1,48 @@
+body {
+  min-width: 320px;
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: -apple-system, 'Helvetica Neue', 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--mainTextColor, #333);
+  background-color: var(--mainBgColor, #fff);
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+.loader,
+.error-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  align-items: center;
+  color: var(--accentColor, #005898);
+}
+
+.loader svg {
+  width: 80px;
+  height: 80px;
+}
+
+.loading svg {
+  transform-origin: center;
+  animation: rotate 1s ease-out infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-container {
+  align-items: flex-end;
+  color: var(--alertColor, #f00);
+}

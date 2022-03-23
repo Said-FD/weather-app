@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.title {
+  margin-top: 1.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  color: var(--accentColor, #005898);
+}
+
+.tilesGrid {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 641px) {
+  .tilesGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
