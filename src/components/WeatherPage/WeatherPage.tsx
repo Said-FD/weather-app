@@ -132,7 +132,7 @@ const WeatherPage = () => {
         )}
       </section>
 
-      {!countryWeather && (
+      {selectedCountry && !countryWeather && (
         <div className={`loader ${loading ? 'loading' : ''}`}>
           <RefreshIcon />
         </div>
